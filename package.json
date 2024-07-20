@@ -1,0 +1,12 @@
+{
+  "name": "input_formatter",
+  "version": "1.0.0",
+  "description": "Manual: Formatter(parent)",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Cilento",
+  "license": "MIT"
+}
