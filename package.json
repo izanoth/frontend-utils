@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "Manual: Formatter(parent)",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
   },
   "author": "Ivan Cilento",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "imask": "^3.2.2",
+    "jquery": "^3.7.1",
+    "vite": "^5.3.4"
+  }
 }
