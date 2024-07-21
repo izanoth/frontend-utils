@@ -2,7 +2,7 @@
 
 ## Useful input field renderizing for broad purposes
 
-![Example](https://github.com/izanoth/input_formatter/screenshot.png)
+![Example](https://github.com/izanoth/input_formatter/blob/master/screenshot.png)
 
 ### Usage:<br>
 <code><small>var element = Formatter(form-element)<small></code>
