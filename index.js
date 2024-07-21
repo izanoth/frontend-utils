@@ -6,12 +6,12 @@ $(document).ready(function () {
     const formatter = new Formatter($('#form'));
     var inputInt = formatter.create();
 
-    inputInt.attr('class', "form-control form-group bg-primary");
+    inputInt.attr('class', "form-control bg-primary");
     console.log('main: ' + inputInt);
     formatter.renderInt(inputInt);
 
     var phone = formatter.create();
-    phone.attr('class', "form-control form-group bg-primary");
+    phone.attr('class', "form-control bg-primary");
     formatter.renderPhone(phone, '(00) 00000-0000');
 
     var inputCpf = formatter.create();

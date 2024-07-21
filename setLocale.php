@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 
 $locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
 //setlocale(LC_ALL, 'vi_VN');
-setlocale(LC_ALL, $locale);
+setlocale(LC_ALL, 'da_DK');
 $localeInfo = localeconv();
 $intCurSymbol = str_replace(" ", "", $localeInfo['int_curr_symbol']);
 $currencySymbol = $localeInfo["currency_symbol"];

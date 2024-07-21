@@ -2,6 +2,8 @@
 
 ## Useful input field renderizing for broad purposes
 
+![Example](https://github.com/izanoth/input_formatter/screenshot.png)
+
 ### Usage:<br>
 <code><small>var element = Formatter(form-element)<small></code>
 <small>The input will be rendered as a child node.</small>
