@@ -49,7 +49,7 @@ The element created with renderInp()'s method has the following set of attribute
 name = 'amount';
 id = 'amount';
 
-We encourage you don't customize their attributes for usage.
+Your are not encouraged to customize its attributes for usage.
 
 
 #### renderPhone()
@@ -69,7 +69,7 @@ The elements created with renderPhone()'s method has the following set of attrib
 name = 'phone';
 id = 'phone';
 
-We encourage you don't customize their attributes for usage.
+Your are not encouraged to customize its attributes for usage.
 
 #### renderCpf()
 <small>Renders a convenient input field with frontend Cpf validation.</small>
