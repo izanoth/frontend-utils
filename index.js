@@ -6,7 +6,7 @@ $(document).ready(function () {
     const formatter = new Formatter($('#app'));
     //formatter.setLocale();
 
-    formatter.renderInput();
+    formatter.renderInt();
     /*el.id('test');
     el.name('name');
     el.classes('form-group form-control bg-info')

@@ -1,14 +1,37 @@
+# Formatter
 
-Manual:
-Formatter(parent)
+## Useful input field rendizing for broad purposes
 
+### Manual:<br>
+<code><small>Formatter(parent-element)<small></code>
 
-#Input formatter
+The input will be rendered as a child node.
 
-#### Vite config
+#### Quick Start
+```
+import Formatter from './src/formatter.js';
+import $ from 'jquery';
 
-Configurar o proxxy para o servidor php..
+$(document).ready(function () {
+    const formatter = new Formatter($('#app'));
+    formatter.renderInput();
+});
+```
+### Methods
 
-#### src/index.js
+#### renderInt()
+<small>Render an input field for comercial purposes, masked for all nature of currencies formats.</small>
 
-
+<small>**For development**<br>renderInt() method has an asynchronous calling.<br>
+You should to targets the NPM proxy to your php server in <code>vite.config.js</code></small>
+```
+server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+}
+```
