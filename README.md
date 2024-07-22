@@ -1,17 +1,28 @@
 # Formatter
 
+Author:
+Ivan Cilento
+
+---
+
+
 ## Useful input field renderizing for broad purposes
 
-![Example](https://github.com/izanoth/input_formatter/screenshot.png)
+
+
+![Example](https://github.com/izanoth/input_formatter/blob/main/screenshot.png)
+
+---
 
 ### Usage:<br>
 <code><small>var element = Formatter(form-element)<small></code>
-<small>The input will be rendered as a child node.</small>
+<br>
+<br>The input will be rendered as a child node.
 
-####
 
 #### Quick Start
-```
+
+```javascript
 import Formatter from './src/formatter.js';
 import $ from 'jquery';
 
@@ -22,18 +33,22 @@ $(document).ready(function () {
     formatter.renderInt(inputIntCurr);
 });
 ```
-Which will be rendered inside of ***form*** element as first child.
+Which will be rendered inside of ***#form*** element as a child.
+
+---
+
 ### Methods
 
 #### create()
 <small>Returns a input element as JQuey object.
 
 #### renderInt()
-<small>Renders an input field for comercial purposes, masked for all nature of currencies formats.</small>
+<small>Renders an input field for comercial purposes, masked for all sort of currencies formats.</small>
 
-<small>**For development**<br>renderInt() method has an asynchronous calling.<br>
+<small>For development:<br>renderInt() method has an asynchronous calling.<br>
 You should to targets the NPM proxy to your php server in <code>vite.config.js</code></small>
-```
+
+```javascript
 server: {
     proxy: {
       '/api': {
@@ -45,32 +60,36 @@ server: {
 }
 ```
 
-The element created with renderInp()'s method has the following set of attributes:
-name = 'amount';
-id = 'amount';
+The element created with renderInp()'s method has the following set of attributes:<br>
+<code>name = 'amount';<br>
+id = 'amount';</code>
 
-We encourage you don't customize their attributes for usage.
+Don't customize it for usage.
 
 
 #### renderPhone()
 <small>Renders an input field.</small>
 <small>Usage:<br>
-```
+
+```javascript
 import Formatter from './src/formatter.js';
 import $ from 'jquery';
 
 $(document).ready(function () {
     const formatter = new Formatter($('#form'));
     var inputPhone = formatter.create();
-    formatter.renderPhone(inputPhone, '(00) 0000-0000'); //Or whatever other mask you want
+    formatter.renderPhone(inputPhone, '(00) 0000-0000');
 });
 ```
-The elements created with renderPhone()'s method has the following set of attributes bu default:
-name = 'phone';
-id = 'phone';
+The elements created with renderPhone()'s method has the following set of attributes bu default:<br>
+<code>name = 'phone';<br>
+id = 'phone';</code>
 
-We encourage you don't customize their attributes for usage.
+Don't customize it for usage.
 
 #### renderCpf()
-<small>Renders a convenient input field with frontend Cpf validation.</small>
+<small>Renders a convenient input field with frontend CPF validation.</small>
 
+
+ 
+##### Bug reports: ivanzanoth@gmail.com
