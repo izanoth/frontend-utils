@@ -91,5 +91,25 @@ Don't customize it for usage.
 <small>Renders a convenient input field with frontend CPF validation.</small>
 
 
- 
+# Event
+
+### Quick start
+```js
+new EventIn($('#button'));
+```
+
+### Methods
+
+#### infoup()
+
+##### infoup() has the color()'s method nested
+
+```js
+var btn = new EventIn($('#button'));
+btn.infoup(content).color('#11cc11');
+```
+where `content` must be the path of a html file as source of the content. 
+
+
+
 ##### Bug reports: ivanzanoth@gmail.com

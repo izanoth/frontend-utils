@@ -1,6 +1,7 @@
 import Formatter from './src/formatter.js';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import EventIn from './src/events.js';
 
 $(document).ready(function () {
     const formatter = new Formatter($('#form'));
@@ -17,8 +18,8 @@ $(document).ready(function () {
     var inputCpf = formatter.create();
     inputCpf.attr('class', "form-control form-group bg-primary");
     formatter.renderCpf(inputCpf);
-    /*el.id('test');
-    el.name('name');
-    el.classes('form-group form-control bg-info')
-    el.rendrIn($('#app'));*/
+
+
+    var btn = new EventIn($('#button'));
+    btn.infoup('test.html').color('#11cc11');
 });

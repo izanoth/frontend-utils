@@ -1,2 +1,1 @@
-src/formatter.js filter=git-crypt diff=git-crypt
-ref.php
+src/int_currencies.js filter=git-crypt diff=git-crypt

@@ -6,8 +6,8 @@ export default defineConfig({
     outDir: 'dist', // Diretório de saída
     rollupOptions: {
       input: {
-        main: 'pub/js/app.js',
-        secondary: 'input_formatter.js',
+        main: './src/app.js',
+        //secondary: 'input_formatter.js',
       },
     },
   },
